@@ -134,7 +134,13 @@ class SharedViewModel(application: Application) : AndroidViewModel(application)
     /**
      * Signs the user out
      */
-    fun signOut() {viewModelScope.launch {accountService.signOut()}}
+    fun signOut()
+    {
+        viewModelScope.launch {
+            accountService.signOut()
+            _authenticationState.value = AuthenticationState.UNAUTHENTICATED
+        }
+    }
 
     /**
      * Fetches a live data list of image URIs from storage service

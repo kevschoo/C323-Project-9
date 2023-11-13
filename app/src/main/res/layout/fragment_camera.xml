@@ -26,8 +26,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textOff="Rear Camera"
-            android:textOn="Front Camera"
-            android:layout_marginTop="4"/>
+            android:textOn="Front Camera"/>
 
     </LinearLayout>
 </FrameLayout>

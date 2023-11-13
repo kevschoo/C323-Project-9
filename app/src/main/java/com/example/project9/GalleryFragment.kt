@@ -131,9 +131,11 @@ class GalleryFragment : Fragment(), SensorEventListener
             if (images.isEmpty())
             {
                 binding.textViewMessage.visibility = View.VISIBLE
+                binding.recyclerViewImages.visibility = View.GONE
             }
             else {
                 binding.textViewMessage.visibility = View.GONE
+                binding.recyclerViewImages.visibility = View.VISIBLE
                 binding.recyclerViewImages.layoutManager = LinearLayoutManager(context)
                 binding.recyclerViewImages.adapter = ImageAdapter(images)
                 { uri ->
