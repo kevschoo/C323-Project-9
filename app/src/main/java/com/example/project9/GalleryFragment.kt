@@ -30,7 +30,7 @@ class GalleryFragment : Fragment(), SensorEventListener
     private var lastX: Float = 0.0f
     private var lastY: Float = 0.0f
     private var lastZ: Float = 0.0f
-    private val shakeThreshold = 800
+    private val shakeThreshold = 400
 
     /**
      * Initializes the sensor manager and accelerometer sensor when the fragment is created
